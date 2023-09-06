@@ -63,4 +63,22 @@ function toggleAlignJustify(){
 
 
 
-// Dark Mode
+// Dark Mode toggle icons
+function toggleDarkMode(){
+    let styleSheet = document.getElementById('stylesheet');
+    let currentTheme = styleSheet.getAttribute("href");
+    let themeToggle = document.getElementById('themeToggle');
+    let themeIcon = document.getElementById('themeIcon');
+
+
+    if(currentTheme === 'Styles/light.css'){
+        styleSheet.setAttribute("href", "Styles/dark.css");
+        // themeIcon.className = "fa-solid fa-moon";
+        // themeToggle.textContent = "Toggle Light Mode"
+    }else{
+        // Switch to light mode
+        styleSheet.setAttribute("href", "Styles/light.css");
+        
+    }
+
+}

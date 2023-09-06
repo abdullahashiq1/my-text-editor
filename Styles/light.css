@@ -1,0 +1,18 @@
+/* Light Mode CSS (light.css) */
+body {
+    background-color: #ffffff; /* Light background color */
+    color: #333333; /* Dark text color */
+}
+
+button {
+    background-color: #007bff; /* Blue button background */
+    color: #ffffff; /* White button text color */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+}
+
+/* Add more styles for different elements as needed */
