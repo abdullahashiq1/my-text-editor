@@ -35,10 +35,16 @@
             <button onclick="toggleAlignJustify()" title="align justify"><i class="fa-solid fa-align-justify" style="font-size: 30px;"></i></button>
         </div>
         <div class=" space-x-3 ">
-            <button title="font size"><i class="fa-solid fa-font" style="font-size: 30px;"></i></button>
-            <input onchange="color(this.value)" id="color" type="color">
-                <label class="color-pallete" for="color">
-                    <i class="fa-solid fa-palette" style="font-size: 30px;"></i></label>
+            <button title="font size"><i class="fa-solid fa-font" style="font-size: 30px;">
+                <select id="fontSize" >
+                    <option value='8'>8</option>
+                    <option value='12' selected>12</option>
+                    <option value='18'>18</option>
+                    <option value='36'>36</option>
+                </select>
+            </i></button>
+           
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
             <div id="toggleSwitch" class="toggle-switch">
                 <!-- <i class="fa-regular fa-sun" style="font-size: 30px;"></i> -->
                 <button class="icon" id="icon1" title="Theme" onclick="toggleDarkMode()"></button>
@@ -63,7 +69,11 @@
         Send
       </button>
 
+      <!-- <input type="number" id="quantity"  name="quantity" min="1" max="10" step="1"> -->
+      
+      
 
+      <!-- js link  -->
     <script src="main.js"></script>
 </body>
 </html>

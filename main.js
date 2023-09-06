@@ -85,4 +85,13 @@ function toggleDarkMode(){
     toggleSwitch.addEventListener("click", function(){
         toggleSwitch.classList.toggle("active");
         icon1.classList.toggle("active");
-    })
+    });
+
+
+// text font size 
+let fontSize = document.querySelector('#fontSize');
+fontSize.addEventListener('change', function(){
+    let selectedValue = fontSize.value;
+    text.style.fontSize = selectedValue + "px";
+    
+})
