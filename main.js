@@ -87,11 +87,17 @@ function toggleDarkMode(){
         icon1.classList.toggle("active");
     });
 
-
 // text font size 
 let fontSize = document.querySelector('#fontSize');
 fontSize.addEventListener('change', function(){
     let selectedValue = fontSize.value;
     text.style.fontSize = selectedValue + "px";
-    
+
+})
+
+// color change 
+const inputColor = document.getElementById('favcolor');
+inputColor.addEventListener('input', function(){
+    const colorValue = inputColor.value;
+    text.style.color = colorValue;
 })
