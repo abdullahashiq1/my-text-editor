@@ -17,3 +17,31 @@
 .align-justify{
     text-align: justify;
 }
+
+
+/* Basics styles for the toggle switch 
+ */
+ .toggle-switch{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(208, 196, 196);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+ }
+ .icon{
+    width: 80%;
+    height: 80%;
+    padding: 18px;
+    margin: 5px;
+    background-image: url('../icons/moon-solid.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    transition: 0.4s;
+ }
+/* Active state for the switch  */
+.toggle-switch.active .icon.active{
+    background-image: url('../icons/sun-regular.png');
+}

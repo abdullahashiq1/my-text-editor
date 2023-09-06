@@ -62,14 +62,10 @@ function toggleAlignJustify(){
 // })
 
 
-
 // Dark Mode toggle icons
 function toggleDarkMode(){
     let styleSheet = document.getElementById('stylesheet');
     let currentTheme = styleSheet.getAttribute("href");
-    let themeToggle = document.getElementById('themeToggle');
-    let themeIcon = document.getElementById('themeIcon');
-
 
     if(currentTheme === 'Styles/light.css'){
         styleSheet.setAttribute("href", "Styles/dark.css");
@@ -80,5 +76,13 @@ function toggleDarkMode(){
         styleSheet.setAttribute("href", "Styles/light.css");
         
     }
-
 }
+
+// toggle icons png 
+    let toggleSwitch = document.getElementById("toggleSwitch");
+    let icon1 = document.getElementById("icon1");
+
+    toggleSwitch.addEventListener("click", function(){
+        toggleSwitch.classList.toggle("active");
+        icon1.classList.toggle("active");
+    })

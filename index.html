@@ -34,14 +34,15 @@
             <button onclick="toggleAlignRight()"  title="align right"><i class="fa-solid fa-align-right" style="font-size: 30px;"></i></button>
             <button onclick="toggleAlignJustify()" title="align justify"><i class="fa-solid fa-align-justify" style="font-size: 30px;"></i></button>
         </div>
-        <div class="space-x-3">
+        <div class=" space-x-3 ">
             <button title="font size"><i class="fa-solid fa-font" style="font-size: 30px;"></i></button>
             <input onchange="color(this.value)" id="color" type="color">
                 <label class="color-pallete" for="color">
                     <i class="fa-solid fa-palette" style="font-size: 30px;"></i></label>
-            
-            <button id="themeToggle" onclick="toggleDarkMode()"><i 
-               id="themeIcon" class="fa-regular fa-sun" style="font-size: 30px;"></i></button>
+            <div id="toggleSwitch" class="toggle-switch">
+                <!-- <i class="fa-regular fa-sun" style="font-size: 30px;"></i> -->
+                <button class="icon" id="icon1" title="Theme" onclick="toggleDarkMode()"></button>
+            </div>          
         </div>
        </div>
     </section>
