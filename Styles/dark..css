@@ -1,0 +1,17 @@
+/* Dark Mode CSS (dark.css)  */
+body {
+    background-color: #121212;
+    color: #ffffffff;
+}
+button{
+    background-color: #333333;
+    color: #ffffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer
+}
+
+button:hover{
+    background-color: #555555;
+}
+
